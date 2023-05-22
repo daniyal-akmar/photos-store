@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { Context } from "./Context";
+import { Context } from "../Context/Context";
 
 const Photo = ({ photo }) => {
     const { cartItems, toggleFav, addToCart, removeFromCart } = useContext(Context);
