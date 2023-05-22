@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 1.125rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+p {
+    margin-bottom: 0;
+}
+
+.site-title {
+    margin-top: 0;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.site-title-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Layout */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-header {
+    color: #fff;
+    background-color: coral;
+    padding: 1rem 2rem;
+    margin-bottom: 4rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 8rem;
+}
+
+.photo-container {
+    position: relative;
+}
+
+.photo-grid {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.heart-btn,
+.add-btn {
+    position: absolute;
+}
+
+.heart-btn {
+    top: 10px;
+    left: 10px;
+}
+
+.add-btn {
+    top: 10px;
+    right: 10px;
+}
+
+.cart {
+    text-align: center;
+    margin-bottom: 8rem;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 2rem;
+}
+
+/* Buttons */
+
+.btn {
+    line-height: 1;
+    font-size: 1.5rem;
+    display: block;
+    text-decoration: none;
+    padding: 0.5em;
+    background-color: #fff;
+    color: #222;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    font-size: 1.5rem;
+    line-height: 1;
+    padding: 0.5em;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.btn-order {
+    font-size: 1rem;
+    padding: 1em 2.5em;
+    color: #fff;
+    background-color: salmon;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
